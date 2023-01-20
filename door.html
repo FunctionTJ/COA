@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>祝～贺～</title>
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel='shortcut icon' href='../rs/chkman.jpg'>
+        <link rel='stylesheet' href='d1.css'>
+        <script>
+        var timer;
+           setInterval(function(){
+            timer = new Date();
+            document.getElementById('year').innerHTML = timer.getFullYear();
+            document.getElementById('month').innerHTML = timer.getMonth()+1;
+            document.getElementById('day').innerHTML = timer.getDate();
+            document.getElementById('hour').innerHTML = timer.getHours();
+            document.getElementById('minute').innerHTML = timer.getMinutes();
+            document.getElementById('second').innerHTML = timer.getSeconds();
+        },1000)
+        var st = function(){
+            alert('你是大SB')
+        };
+    </script>
+    </head>
+    <body>
+        <div id='dt'>
+            <img id='i1' src='JiZh.jpg'>
+            <div id='te1'>
+                <p class='te1' id='p1'>热烈祝贺<a href='to1.html'>余俐君</a>小姐,</p>
+                <p class='te1' id='p2'>于本次期末考试中荣获</p>
+            </div>
+            <div class='prc'>
+                <p id='prc1'>真正的</p>
+                <p id='prc2'>NO.1</p>
+            </div>
+            <div class='ed'>
+                <p id='sender'>发证人: 王大帅逼</p>
+                <p id='time'>
+                    <span id='year'></span> .
+                    <span id='month'></span> .
+                    <span id='day'></span> -
+                    <span id='hour'></span> :
+                    <span id='minute'></span> :
+                    <span id='second'></span>
+                </p>
+            </div>
+            <div id='itr'>
+                <p>Polished</p>
+                <p>By</p>
+                <p>FunctionTJ</p>
+            </div>
+            <div class='chg' align='right'>
+                <button id='bt' onclick='st()'>确认</button>
+            </div>
+        </div>
+    </body>
+</html>
